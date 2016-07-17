@@ -1,6 +1,6 @@
 app.controller('MainController', function($scope, $http) {
 	$scope.result = [];
-	$http.get('http://pmb.bem.unsri.ac.id/api.php')
+	$http.get('http://penerimaan.azurewebsites.net/api.php')
 	.success(function(data) {
 		$scope.result = data;
 	});
@@ -8,7 +8,7 @@ app.controller('MainController', function($scope, $http) {
 
 app.controller('MainController2', function($scope, $http) {
 	$scope.result = [];
-	$http.get('http://pmb.bem.unsri.ac.id/api2.php')
+	$http.get('http://penerimaan.azurewebsites.net/api2.php')
 	.success(function(data) {
 		$scope.result = data;
 	});
