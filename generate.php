@@ -9,7 +9,7 @@
 		$jurusan			= $_POST["jurusan"];
 		$no_hp				= $_POST["no_hp"];
 		
-		$password 			= randString(8);
+		$password 			= $nim;
 
 		$sql				= sprintf("INSERT INTO maba(nim, nama, fakultas, jurusan, password, no_hp) VALUES('%s', '%s', '%s', '%s', '%s', '%s')", mysqli_real_escape_string($connection, $nim), mysqli_real_escape_string($connection, $nama), mysqli_real_escape_string($connection, $fakultas), mysqli_real_escape_string($connection, $jurusan), mysqli_real_escape_string($connection, $password), mysqli_real_escape_string($connection, $no_hp));
 
